@@ -2,6 +2,12 @@
   <html height="100%">
 	<head>
 		<title>Billy Hatcher Speedrunning Documentation</title>
+		<script type="text/javascript">
+		function goToUrl()
+		{
+			var url = document.getElementById('tables').value;
+			if(url != 'null') {window.location = url;}
+	    	}
 	</head>
 	<body>
     	<h1> Please Choose Your Desired Table: </h1>
@@ -16,7 +22,6 @@
 	  <option value=<a href="http://bhspeedruns.github.io/sand">Sand Ruins Strats>
 	  <option value=<a href="http://bhspeedruns.github.io/palace">Giant Palace Strats>
 	</datalist>
-	<input type="submit">
-        </form>
+	<input type="submit" onclick="goToUrl()" />
 	</body>	
 </html>
