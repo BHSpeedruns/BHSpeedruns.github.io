@@ -5,13 +5,6 @@
 	</head>
 	<body>
     	<h1> Please Choose Your Desired Table: </h1>
-        <?php
-		if(isset($_POST['tables'])) {
-    			$selection = $_POST['tables'];
-                	echo $selection;
-                	if($selection == 'Movement Techniques'){echo 'movement techniques';}
-   		}
-        ?>
 	<form method="POST">
 		<input list="tables">
 		<datalist id="tables">
