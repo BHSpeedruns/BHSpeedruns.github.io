@@ -3,61 +3,26 @@
 	<head>
 		<title>Billy Hatcher Speedrunning Documentation</title>
 		<script type="text/javascript">
-    		function goToUrl()
-    		{
-			var choice = document.getElementById("tables").value;
-			if(choice == "Movement Techniques")
+    			function goToUrl()
 			{
-				window.location.assign("https://bhspeedruns.github.io/movement/)
+				window.location.assign("https://bhspeedruns.github.io/"
+					+document.getElementById("tables").value+"/")
 			}
-			else if(choice == "Forest Village Strats")
-			{
-				window.location.assign("https://bhspeedruns.github.io/forest/)
-			}
-			else if(choice == "Pirate Island Strats")
-			{
-				window.location.assign("https://bhspeedruns.github.io/pirate/)
-			}
-			else if(choice == "Dino Mountain Strats")
-			{
-				window.location.assign("https://bhspeedruns.github.io/dino/)
-			}
-			else if(choice == "Blizzard Castle Strats")
-			{
-				window.location.assign("https://bhspeedruns.github.io/blizzard/)
-			}
-			else if(choice == "Circus Park Strats")
-			{
-				window.location.assign("https://bhspeedruns.github.io/circus/)
-			}
-			else if(choice == "Sand Ruins Strats")
-			{
-				window.location.assign("https://bhspeedruns.github.io/sand/)
-			}
-			else if(choice == "Giant Palace Strats")
-			{
-				window.location.assign("https://bhspeedruns.github.io/palace/)
-			}			       
-			else
-			{
-				document.getElementById("demo").innerHTML = "Please choose one of the options";
-			}
-    		}
 		</script>
 	</head>
 	<body>
 		<h1> Please Choose Your Desired Table: </h1>
-		<select id="tables" size="8">
-		  <option value="Movement Techniques"></option>
-		  <option value="Forest Village Strats"></option>
-		  <option value="Pirate Island Strats"></option>
-		  <option value="Dino Mountain Strats"></option>
-		  <option value="Blizzard Castle Strats"></option>
-		  <option value="Circus Park Strats"></option>
-		  <option value="Sand Ruins Strats"></option>
-		  <option value="Giant Palace Strats"></option>
-		</datalist>
+        	<select id="tables" size="8">
+		  <option value="movement">Movement Techniques</option>
+		  <option value="forest">Forest Village Strats</option>
+		  <option value="pirate">Pirate Island Strats</option>
+		  <option value="dino">Dino Mountain Strats</option>
+		  <option value="blizzard">Blizzard Castle Strats</option>
+		  <option value="circus">Circus Park Strats</option>
+		  <option value="sand">Sand Ruins Strats</option>
+		  <option value="palace">Giant Palace Strats</option>
+		</select>
+		
 		<button onclick = "goToUrl()">Submit</button>
-		<p id="error"></p>
 	</body>	
 </html>
